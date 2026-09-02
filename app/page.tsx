@@ -136,92 +136,19 @@ export default function Home() {
       </section>
 
       {/* INTRO */}
-      <section id="hakkimizda" className="bg-[#f5f2ed]">
-        <div className="mx-auto max-w-[1500px] px-6 py-24 md:px-12 md:py-36">
-
-          <div className="mb-16 flex items-center gap-5">
-            <span className="h-px w-12 bg-black/30" />
-            <p className="text-[10px] uppercase tracking-[0.35em] text-black/45">
-              BUBENY / 01
-            </p>
-          </div>
-
-          <div className="grid gap-16 lg:grid-cols-[1.35fr_0.65fr] lg:gap-24">
-
-            <div>
-              <h2 className="max-w-5xl text-[clamp(3rem,6vw,7rem)] font-light leading-[0.98] tracking-[-0.055em] text-[#242321]">
-                Kadın giyim sektöründe
-                <br />
-                <span className="font-light italic">
-                  doğru ürünleri buluyor,
-                </span>
-                <br />
-                doğru tedarikle
-                <br />
-                size ulaştırıyoruz.
-              </h2>
-            </div>
-
-            <div className="flex flex-col justify-end border-l border-black/15 pl-6 md:pl-10">
-              <span className="mb-8 text-[10px] uppercase tracking-[0.3em] text-black/35">
-                Kadın Giyim Tedarikçisi
-              </span>
-
-              <p className="max-w-md text-lg font-light leading-8 text-black/60 md:text-xl md:leading-9">
-                BUBENY, butiklerin ve işletmelerin kadın giyim ihtiyaçları
-                için doğru ürünleri araştırır ve güvenilir tedarik
-                seçenekleri sunar.
-              </p>
-
-              <a
-                href="#nasil-calisiyoruz"
-                className="group mt-12 flex w-fit items-center gap-5 border-b border-black pb-3 text-[10px] uppercase tracking-[0.2em] transition hover:opacity-50"
-              >
-                Tedarik Sürecimizi Keşfedin
-
-                <span className="text-lg transition-transform duration-300 group-hover:translate-x-2">
-                  →
-                </span>
-              </a>
-            </div>
-
-          </div>
-
-          <div className="mt-24 grid grid-cols-3 border-t border-black/15 pt-8 md:mt-32">
-            <div>
-              <p className="text-[9px] uppercase tracking-[0.2em] text-black/35">
-                Odak
-              </p>
-              <p className="mt-2 text-sm md:text-base">
-                Kadın Giyim
-              </p>
-            </div>
-
-            <div>
-              <p className="text-[9px] uppercase tracking-[0.2em] text-black/35">
-                Hizmet
-              </p>
-              <p className="mt-2 text-sm md:text-base">
-                Tedarik
-              </p>
-            </div>
-
-            <div>
-              <p className="text-[9px] uppercase tracking-[0.2em] text-black/35">
-                Konum
-              </p>
-              <p className="mt-2 text-sm md:text-base">
-                Türkiye
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </section>
+      
 
       {/* CATEGORIES */}
       {/* NEDEN BUBENY */}
-      <section className="bg-[#242321] px-6 py-20 text-white md:px-12 md:py-24">
+      <section className="premium-grid bg-[#242321] px-6 py-20 text-white md:px-12 md:py-24">
+        <div className="map-animation" aria-hidden="true">
+          <span className="map-node node-1" />
+          <span className="map-node node-2" />
+          <span className="map-node node-3" />
+          <span className="map-node node-4" />
+          <span className="map-node node-5" />
+          <span className="map-node node-6" />
+        </div>
         <div className="mx-auto max-w-[1500px]">
 
           <div className="border-b border-white/15 pb-10">
