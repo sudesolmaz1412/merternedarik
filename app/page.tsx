@@ -62,7 +62,7 @@ export default function Home() {
       <header className="absolute left-0 top-0 z-20 w-full text-white">
         <div className="mx-auto flex max-w-[1500px] items-center justify-between px-6 py-7 md:px-12">
           <a href="#" className="text-2xl font-semibold tracking-[0.32em]">
-            BUBENY
+            ROTA TEDARİK
           </a>
 
           <nav className="hidden gap-9 text-xs uppercase tracking-[0.15em] md:flex">
@@ -139,7 +139,7 @@ export default function Home() {
       
 
       {/* CATEGORIES */}
-      {/* NEDEN BUBENY */}
+      {/* NEDEN ROTA TEDARİK */}
       <section className="premium-grid bg-[#242321] px-6 py-20 text-white md:px-12 md:py-24">
         <div className="map-animation" aria-hidden="true">
           <span className="map-node node-1" />
@@ -153,7 +153,7 @@ export default function Home() {
 
           <div className="border-b border-white/15 pb-10">
             <p className="text-[10px] uppercase tracking-[0.4em] text-white/40">
-              BUBENY / NEDEN BİZ?
+              ROTA TEDARİK / NEDEN BİZ?
             </p>
 
             <h2 className="mt-5 text-4xl font-light leading-[1] tracking-[-0.04em] md:text-6xl">
@@ -222,7 +222,7 @@ export default function Home() {
 
             <div>
               <p className="text-[10px] uppercase tracking-[0.35em] text-black/40">
-                BUBENY / ÜRÜN TALEBİ
+                ROTA TEDARİK / ÜRÜN TALEBİ
               </p>
 
               <h2 className="mt-6 max-w-4xl text-5xl font-light leading-[0.98] tracking-[-0.05em] md:text-7xl">
@@ -349,7 +349,7 @@ export default function Home() {
         <div className="flex items-center bg-[#d8d0c5] px-8 py-24 md:px-16 lg:px-24">
           <div className="max-w-xl">
             <p className="text-[10px] uppercase tracking-[0.3em] text-black/45">
-              BUBENY Tedarik
+              ROTA TEDARİK
             </p>
 
             <h2 className="mt-7 text-5xl font-light leading-tight tracking-[-0.04em] md:text-7xl">
@@ -381,7 +381,7 @@ export default function Home() {
           <div className="mb-14 grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end">
             <div>
               <p className="text-[10px] uppercase tracking-[0.3em] text-black/40">
-                BUBENY / SÜREÇ
+                ROTA TEDARİK / SÜREÇ
               </p>
 
               <h2 className="mt-5 text-4xl font-light leading-tight tracking-[-0.04em] md:text-6xl">
@@ -462,7 +462,7 @@ export default function Home() {
       <section id="iletisim" className="bg-[#9d9184] px-6 py-28 text-white md:px-12 md:py-40">
         <div className="mx-auto max-w-[1500px]">
           <p className="text-[10px] uppercase tracking-[0.3em] text-white/55">
-            BUBENY İletişim
+            ROTA TEDARİK İletişim
           </p>
 
           <div className="mt-10 flex flex-col justify-between gap-12 lg:flex-row lg:items-end">
@@ -501,7 +501,7 @@ export default function Home() {
 
             <div>
               <p className="text-xl font-medium tracking-[0.3em]">
-                BUBENY
+                ROTA TEDARİK
               </p>
 
               <p className="mt-5 text-[10px] uppercase tracking-[0.3em] text-white/40">
@@ -524,7 +524,7 @@ export default function Home() {
 
           <div className="flex flex-col justify-between gap-4 pt-7 text-[10px] uppercase tracking-[0.2em] text-white/35 md:flex-row">
             <span>İstediğiniz ürünler, aynı kargoda.</span>
-            <span>© 2026 BUBENY</span>
+            <span>© 2026 ROTA TEDARİK</span>
           </div>
 
         </div>
