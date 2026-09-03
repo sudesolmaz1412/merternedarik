@@ -100,8 +100,12 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto flex min-h-screen max-w-[1500px] items-end px-6 pb-14 pt-32 md:px-12 md:pb-20">
           <div className="max-w-5xl text-white">
-            <p className="mb-7 text-[10px] uppercase tracking-[0.35em] text-white/70 md:text-xs">
-              Kadın Giyim Tedarik & Sourcing
+            <p className="mb-7 flex items-center gap-3 text-[10px] uppercase tracking-[0.35em] text-white/70 md:text-xs">
+              <span>Türkiye</span>
+              <span className="text-white/50">→</span>
+              <span>TÜRKİYE</span>
+              <span className="ml-2 hidden h-px w-10 bg-white/40 md:block" />
+              <span className="ml-2">Kadın Giyim Tedarik</span>
             </p>
 
             <h1 className="text-6xl font-light leading-[0.88] tracking-[-0.06em] md:text-8xl lg:text-[10rem]">
@@ -111,10 +115,10 @@ export default function Home() {
             </h1>
 
             <div className="mt-10 flex flex-col gap-6 border-t border-white/30 pt-7 md:flex-row md:items-center md:justify-between">
-              <p className="max-w-md text-sm leading-7 text-white/80 md:text-base">
-                Tüm Türkiye'ye aynı gün kargo avantajıyla kadın giyim ürünlerini
-                güvenilir tedarik ağıyla buluyor, sipariş sürecini
-                kolaylaştırıyoruz.
+              <p className="max-w-md text-sm leading-7 text-white/85 md:text-base">
+                Merter başta olmak üzere Türkiye'nin güçlü toptan tedarik
+                ağından ihtiyaç duyduğunuz kadın giyim ürünlerini buluyor,
+                sipariş sürecinizi yönetiyor ve <span className="font-medium text-white">Türkiye'nin her yerine ulaştırıyoruz.</span>
               </p>
 
               <a
@@ -131,7 +135,7 @@ export default function Home() {
         </div>
 
         <div className="absolute bottom-8 right-8 hidden text-[10px] uppercase tracking-[0.3em] text-white/60 md:block">
-          İstanbul / Türkiye
+          Türkiye Geneli
         </div>
       </section>
 
@@ -336,6 +340,81 @@ export default function Home() {
         </div>
       </section>
 
+      {/* TÜRKİYE GENELİ TEDARİK */}
+      <section className="bg-[#181716] px-6 py-20 text-white md:px-12 md:py-28">
+        <div className="mx-auto max-w-[1500px]">
+
+          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+
+            <div>
+              <p className="text-[10px] uppercase tracking-[0.35em] text-white/45">
+                ROTA TEDARİK / TÜRKİYE GENELİ
+              </p>
+
+              <div className="mt-6 text-5xl font-light leading-[0.95] tracking-[-0.05em] md:text-7xl">
+                Türkiye'nin
+                <br />
+                <span className="italic">her yerine.</span>
+              </div>
+            </div>
+
+            <div>
+              <p className="max-w-2xl text-lg leading-8 text-white/65 md:text-2xl md:leading-10">
+                Merter başta olmak üzere Türkiye'nin güçlü toptan tedarik
+                ağından ihtiyaç duyduğunuz kadın giyim ürünlerini buluyor,
+                sipariş sürecinizi yönetiyor ve Türkiye'nin her yerine
+                hızlı şekilde ulaştırıyoruz.
+              </p>
+            </div>
+
+          </div>
+
+          <div className="mt-16 grid border-t border-white/15 md:grid-cols-3">
+
+            <div className="border-b border-white/15 py-8 md:border-b-0 md:border-r md:pr-10">
+              <span className="text-[10px] tracking-[0.25em] text-white/35">
+                01
+              </span>
+              <h3 className="mt-5 text-2xl font-light">
+                Doğru Ürünü Buluyoruz
+              </h3>
+              <p className="mt-4 max-w-sm text-sm leading-7 text-white/45">
+                İhtiyacınıza uygun kadın giyim ürünlerini güçlü tedarik
+                ağımız üzerinden araştırıyoruz.
+              </p>
+            </div>
+
+            <div className="border-b border-white/15 py-8 md:border-b-0 md:border-r md:px-10">
+              <span className="text-[10px] tracking-[0.25em] text-white/35">
+                02
+              </span>
+              <h3 className="mt-5 text-2xl font-light">
+                Siparişi Yönetiyoruz
+              </h3>
+              <p className="mt-4 max-w-sm text-sm leading-7 text-white/45">
+                Ürün, adet ve sipariş detaylarını takip ederek süreci
+                sizin için kolaylaştırıyoruz.
+              </p>
+            </div>
+
+            <div className="py-8 md:pl-10">
+              <span className="text-[10px] tracking-[0.25em] text-white/35">
+                03
+              </span>
+              <h3 className="mt-5 text-2xl font-light">
+                Türkiye'ye Ulaştırıyoruz
+              </h3>
+              <p className="mt-4 max-w-sm text-sm leading-7 text-white/45">
+                Hazırlanan siparişlerinizi Türkiye'nin her yerine hızlı ve
+                güvenilir şekilde gönderiyoruz.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
       {/* BIG IMAGE */}
       <section className="grid min-h-[800px] lg:grid-cols-2">
         <div
@@ -346,7 +425,7 @@ export default function Home() {
           }}
         />
 
-        <div className="flex items-center bg-[#d8d0c5] px-8 py-24 md:px-16 lg:px-24">
+        <div className="flex items-center bg-[#f5f3f0] px-8 py-24 md:px-16 lg:px-24">
           <div className="max-w-xl">
             <p className="text-[10px] uppercase tracking-[0.3em] text-black/45">
               ROTA TEDARİK
@@ -375,7 +454,7 @@ export default function Home() {
       </section>
 
       {/* PROCESS */}
-      <section id="nasil-calisiyoruz" className="bg-[#f5f2ed]">
+      <section id="nasil-calisiyoruz" className="bg-[#f5f3f0]">
         <div className="mx-auto max-w-[1500px] px-6 py-20 md:px-12 md:py-32">
 
           <div className="mb-14 grid gap-8 lg:grid-cols-[1fr_1fr] lg:items-end">
@@ -459,7 +538,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section id="iletisim" className="bg-[#9d9184] px-6 py-28 text-white md:px-12 md:py-40">
+      <section id="iletisim" className="bg-[#242321] px-6 py-28 text-white md:px-12 md:py-40">
         <div className="mx-auto max-w-[1500px]">
           <p className="text-[10px] uppercase tracking-[0.3em] text-white/55">
             ROTA TEDARİK İletişim
