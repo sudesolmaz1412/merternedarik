@@ -187,14 +187,23 @@ export default function BlogPage() {
               <span className="italic">birlikte tedarik edelim.</span>
             </h2>
 
-            <a
-              href="https://wa.me/905324975361"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-8 inline-flex border border-white/30 px-6 py-3 text-sm transition hover:bg-white hover:text-[#242321]"
-            >
-              WhatsApp'tan Tedarik Talebi →
-            </a>
+            <div className="mt-8 flex flex-col items-start gap-4">
+              <a
+                href="https://wa.me/905324975361"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex border border-white/30 px-6 py-3 text-sm transition hover:bg-white hover:text-[#242321]"
+              >
+                WhatsApp'tan Tedarik Talebi →
+              </a>
+
+              <a
+                href="tel:+905324975361"
+                className="text-sm tracking-[0.08em] text-white/70 transition hover:text-white"
+              >
+                0532 497 53 61
+              </a>
+            </div>
           </div>
         </div>
       </article>
