@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/blog/merter-kadin-giyim-tedarikcisi`,
+    'https://www.merterdentedarik.com/blog/bayrampasadan-mal-almak-istiyorum',
     },
   ];
 }
