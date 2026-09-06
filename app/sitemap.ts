@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/toptan-kadin-giyim-merter",
     "/blog/merter-kadin-giyim-tedarikcisi",
     "/blog/bayrampasadan-mal-almak-istiyorum",
+    "/blog/bayrampasa-tekstil",
   ];
 
   return routes.map((route) => ({
