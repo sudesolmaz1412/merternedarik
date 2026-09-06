@@ -1,36 +1,23 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://www.merterdentedarik.com";
-
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: baseUrl,
-    },
-    {
-      url: `${baseUrl}/blog/merter-kadin-giyim-toptan`,
-    },
-    {
-      url: `${baseUrl}/blog/toptan-kadin-giyim`,
-    },
-    {
-      url: `${baseUrl}/blog/merter-kadin-giyim`,
-    },
-    {
-      url: `${baseUrl}/blog/merter-toptan-kadin-giyim`,
-    },
-    {
-      url: `${baseUrl}/blog/merterden-mal-istiyorum`,
-    },
-    {
-      url: `${baseUrl}/blog/merterden-butige-toptan-kadin-giyim`,
-    },
-    {
-      url: `${baseUrl}/blog/toptan-kadin-giyim-merter`,
-    },
-    {
-      url: `${baseUrl}/blog/merter-kadin-giyim-tedarikcisi`,
-    'https://www.merterdentedarik.com/blog/bayrampasadan-mal-almak-istiyorum',
-    },
+  const baseUrl = "https://www.merterdentedarik.com";
+
+  const routes = [
+    "",
+    "/blog/merter-kadin-giyim-toptan",
+    "/blog/toptan-kadin-giyim",
+    "/blog/merter-kadin-giyim",
+    "/blog/merter-toptan-kadin-giyim",
+    "/blog/merterden-mal-istiyorum",
+    "/blog/merterden-butige-toptan-kadin-giyim",
+    "/blog/toptan-kadin-giyim-merter",
+    "/blog/merter-kadin-giyim-tedarikcisi",
+    "/blog/bayrampasadan-mal-almak-istiyorum",
   ];
+
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+  }));
 }
