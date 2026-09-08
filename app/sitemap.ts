@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/bayrampasadan-mal-almak-istiyorum",
     "/blog/bayrampasa-tekstil",
     "/blog/bayrampasa-tekstil-tedarikcisi",
+    "/blog/bayrampasa-toptan-kadin-giyim",
   ];
 
   return routes.map((route) => ({
