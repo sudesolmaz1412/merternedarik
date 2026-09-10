@@ -6,6 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
     "",
     "/blog/merter-kadin-giyim-toptan",
+    "/blog/merter-tekstil",
     "/blog/toptan-kadin-giyim",
     "/blog/merter-kadin-giyim",
     "/blog/merter-toptan-kadin-giyim",
