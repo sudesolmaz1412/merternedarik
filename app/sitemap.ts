@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/merterden-butige-toptan-kadin-giyim",
     "/blog/toptan-kadin-giyim-merter",
     "/blog/merter-kadin-giyim-tedarikcisi",
+  "/blog/merter-toptan-kadin-giyim-fiyatlari",
     "/blog/bayrampasadan-mal-almak-istiyorum",
     "/blog/bayrampasa-tekstil",
     "/blog/bayrampasa-tekstil-tedarikcisi",
