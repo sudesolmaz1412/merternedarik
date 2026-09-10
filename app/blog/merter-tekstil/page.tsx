@@ -69,6 +69,24 @@ export default function MerterTekstilPage() {
 
   return (
     <main className="min-h-screen bg-[#f5f2ed] text-[#181716]">
+      <a
+        href="https://wa.me/905324975361?text=Merter%20tekstil%20%C3%BCr%C3%BCnleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp ile iletişime geç"
+        className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-2xl transition-transform duration-200 hover:scale-110"
+      >
+        <svg
+          viewBox="0 0 32 32"
+          className="h-9 w-9"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M19.11 17.19c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27s.98 2.63 1.11 2.81c.14.18 1.92 2.94 4.65 4.12.65.28 1.16.45 1.56.58.66.21 1.26.18 1.73.11.53-.08 1.6-.66 1.82-1.3.23-.64.23-1.19.16-1.3-.07-.11-.25-.18-.52-.32z"/>
+          <path d="M16.02 3.2a12.8 12.8 0 0 0-10.9 19.5L3.2 28.8l6.3-1.86a12.8 12.8 0 1 0 6.52-23.74zm0 23.3c-2.05 0-4.05-.55-5.8-1.59l-.42-.25-3.74 1.1 1.12-3.64-.27-.44A10.64 10.64 0 1 1 16.02 26.5z"/>
+        </svg>
+      </a>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
