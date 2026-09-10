@@ -20,7 +20,26 @@ export default function BayrampasaHazirGiyimPage() {
             Bayrampaşa Hazır Giyim
           </p>
 
-          <h1 className="text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
+          
+        <div className="my-10 grid gap-6 md:grid-cols-2">
+          <div className="overflow-hidden rounded-2xl">
+            <img
+              src="/images/mertertekstil.png"
+              alt="Bayrampaşa hazır giyim ve toptan tekstil ürünleri"
+              className="h-auto w-full object-cover"
+            />
+          </div>
+
+          <div className="overflow-hidden rounded-2xl">
+            <img
+              src="/images/mertertekstiltedarik.png"
+              alt="Bayrampaşa hazır giyim tedarikçisi ve toptan kadın giyim"
+              className="h-auto w-full object-cover"
+            />
+          </div>
+        </div>
+
+<h1 className="text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl">
             Bayrampaşa Hazır Giyim
           </h1>
 
