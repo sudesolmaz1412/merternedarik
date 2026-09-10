@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 "/blog/merter-hazir-giyim",
   "/blog/merter-kadin-giyim-toptancilari",
   "/blog/merter-toptan-giyim-tedarikcisi",
+  "/blog/merter-toptan-giyim-magazalari",
     "/blog/merterden-mal-istiyorum",
     "/blog/merterden-butige-toptan-kadin-giyim",
     "/blog/toptan-kadin-giyim-merter",
