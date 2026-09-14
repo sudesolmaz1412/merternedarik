@@ -1,337 +1,235 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Merter Toptan Kadın Giyim Modelleri | Rota Tedarik",
   description:
-    "Merter toptan kadın giyim modelleri, sezonluk ürünler ve butiklere uygun kadın giyim seçenekleri. Rota Tedarik ile İstanbul'dan Türkiye geneli güvenilir tedarik.",
-  alternates: {
-    canonical:
-      "https://www.merterdentedarik.com/blog/merter-toptan-kadin-giyim-modelleri",
-  },
+    "Merter toptan kadın giyim modelleri arayan butik, mağaza ve online satıcılar için ürün seçimi ve tedarik rehberi. İstanbul tekstil piyasasından kadın giyim ürünleri.",
 };
-
-const whatsapp =
-  "https://wa.me/905324975361?text=Merter%20toptan%20kad%C4%B1n%20giyim%20modelleri%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.";
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#f5f2ed] text-[#181716]">
-      <article className="mx-auto max-w-5xl px-6 py-16 md:px-10 md:py-24">
+    <main className="min-h-screen bg-[#f5f2ed] text-[#242321]">
+      <header className="border-b border-black/10">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+          <Link href="/" className="text-sm font-semibold tracking-[0.2em]">
+            ROTA TEDARİK
+          </Link>
 
-        <Link
-          href="/"
-          className="text-sm font-medium tracking-[0.18em] text-black/55"
-        >
-          ROTA TEDARİK
-        </Link>
-
-        <div className="mt-10">
-          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-black/50">
-            Merter Toptan Kadın Giyim
-          </p>
-
-          <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-tight tracking-[-0.04em] md:text-6xl">
-            Merter Toptan Kadın Giyim Modelleri
-          </h1>
-
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-black/65">
-            Butik ve mağazalar için Merter toptan kadın giyim modellerini
-            araştırıyor, sezonun öne çıkan ürünlerini İstanbul tekstil
-            piyasasından bulup Türkiye geneline tedarik ediyoruz.
-          </p>
+          <a
+            href="https://wa.me/905324975361"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-[#242321] px-5 py-3 text-xs font-medium text-white"
+          >
+            WhatsApp'tan Ulaş
+          </a>
         </div>
+      </header>
 
-        <div className="mt-12 overflow-hidden rounded-[2rem] bg-[#d8d0c5]">
+      <article className="mx-auto max-w-4xl px-6 py-16 md:py-24">
+        <p className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-black/50">
+          Kadın Giyim Modelleri
+        </p>
+
+        <h1 className="text-4xl font-medium leading-[1.08] tracking-tight md:text-6xl">
+          Merter Toptan Kadın Giyim Modelleri
+        </h1>
+
+        <p className="mt-7 max-w-3xl text-lg leading-8 text-black/65">
+          Merter toptan kadın giyim modelleri arayan butik, mağaza ve online
+          satıcılar için doğru ürünleri araştırmak; model, kalite, fiyat ve
+          stok seçeneklerini birlikte değerlendirmeyi gerektirir.
+        </p>
+
+        <div className="my-12 overflow-hidden rounded-2xl">
           <img
-            src="/images/mertermodasezon.png"
+            src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1600&q=85"
             alt="Merter toptan kadın giyim modelleri"
             className="h-[420px] w-full object-cover"
           />
         </div>
 
-        <div className="mt-14 grid gap-12 md:grid-cols-[1fr_280px]">
-          <div className="space-y-8 text-[17px] leading-8 text-black/75">
+        <div className="space-y-12 text-[17px] leading-8 text-black/75">
+          <section>
+            <h2 className="mb-4 text-2xl font-semibold text-[#242321]">
+              Merter'de hangi toptan kadın giyim modelleri bulunur?
+            </h2>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-black">
-                Merter toptan kadın giyim modellerinde neler bulunur?
-              </h2>
+            <p>
+              Merter, kadın giyim ürünlerini toptan olarak araştıran işletmeler
+              için geniş bir ürün seçeneğine sahip İstanbul tekstil
+              bölgelerinden biridir. Ürün çeşitleri sezon, moda trendleri ve
+              tedarik durumuna göre değişebilir.
+            </p>
 
-              <p className="mt-4">
-                Merter, kadın hazır giyim açısından geniş ürün çeşitliliğine
-                sahip İstanbul tekstil bölgelerinden biridir. Sezon ve müşteri
-                kitlesine göre elbise, bluz, gömlek, etek, pantolon, takım,
-                triko, hırka, ceket ve farklı üst giyim modelleri arasında
-                seçim yapılabilir.
-              </p>
+            <p className="mt-4">
+              Butik ve mağazalar genellikle elbise, takım, bluz, gömlek,
+              pantolon ve etek gibi farklı ürün gruplarını birlikte araştırır.
+              Böylece müşterilerine farklı kullanım alanlarına uygun bir
+              koleksiyon sunabilir.
+            </p>
+          </section>
 
-              <p className="mt-4">
-                Rota Tedarik olarak tek bir ürüne bağlı kalmadan, işletmenin
-                satış tarzına uygun modelleri araştırıyor ve ihtiyaç duyulan
-                ürünleri İstanbul'daki tedarik ağı üzerinden bulmaya yardımcı
-                oluyoruz.
-              </p>
-            </section>
+          <section>
+            <h2 className="mb-4 text-2xl font-semibold text-[#242321]">
+              Toptan kadın elbise modelleri
+            </h2>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-black">
-                Sezonluk kadın giyim modelleri
-              </h2>
+            <p>
+              Kadın elbiseleri toptan giyimde en çok araştırılan ürün
+              gruplarından biridir. Günlük elbiseler, sezonluk modeller,
+              farklı kesim ve kumaş seçenekleri işletmelerin ürün
+              ihtiyaçlarına göre değerlendirilebilir.
+            </p>
 
-              <p className="mt-4">
-                Toptan kadın giyimde model seçimi sezonla birlikte değişir.
-                Yeni sezon elbiseler, takımlar, gömlekler, trikolar, etekler
-                ve günlük kullanıma uygun parçalar butiklerin ürün
-                çeşitliliğini artırabilir.
-              </p>
+            <p className="mt-4">
+              Elbise seçerken yalnızca görünüşe değil, kumaş kalitesine, beden
+              dağılımına, renk seçeneklerine ve ürünün hedef müşteri kitlesine
+              uygunluğuna da dikkat edilmelidir.
+            </p>
+          </section>
 
-              <p className="mt-4">
-                Özellikle hızlı ürün yenilemek isteyen işletmeler için güncel
-                koleksiyonları takip etmek önemlidir. Bu nedenle ürün
-                araştırmasını yalnızca fiyat üzerinden değil; model, sezon,
-                kullanım alanı ve müşterinin talebi üzerinden değerlendirmek
-                gerekir.
-              </p>
-            </section>
+          <section>
+            <h2 className="mb-4 text-2xl font-semibold text-[#242321]">
+              Toptan kadın giyim takım modelleri
+            </h2>
 
-            <div className="overflow-hidden rounded-[1.5rem] bg-[#d8d0c5]">
-              <img
-                src="/images/mertermodatoptan.png"
-                alt="Merter toptan kadın giyim tedarik"
-                className="h-[360px] w-full object-cover"
-              />
-            </div>
+            <p>
+              Kadın giyim takımları da butik ve online satış yapan işletmelerin
+              ürün araştırmalarında önemli bir yere sahiptir. Farklı üst ve
+              alt parçalardan oluşan takımlar, müşterilere hazır kombin
+              seçeneği sunabilir.
+            </p>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-black">
-                Butikler için doğru model seçimi
-              </h2>
+            <p className="mt-4">
+              Toptan takım seçerken kumaş, kalıp, beden aralığı ve sezon
+              uygunluğu birlikte değerlendirilmelidir.
+            </p>
+          </section>
 
-              <p className="mt-4">
-                Toptan alım yaparken yalnızca çok sayıda model bulmak yeterli
-                değildir. Butiğin müşteri profiline uygun ürünleri seçmek,
-                beden ve renk çeşitliliğini değerlendirmek ve ürünlerin
-                mağazanın genel tarzıyla uyumlu olmasına dikkat etmek gerekir.
-              </p>
+          <section>
+            <h2 className="mb-4 text-2xl font-semibold text-[#242321]">
+              Butikler için model seçimi nasıl yapılır?
+            </h2>
 
-              <p className="mt-4">
-                Günlük kadın giyim, ofis kombinleri, sezonluk elbiseler,
-                triko ürünler veya daha şık parçalar arasında seçim yapılırken
-                satış kanalına göre hareket etmek stok yönetimini
-                kolaylaştırabilir.
-              </p>
-            </section>
+            <p>
+              Butiklerin ürün seçimi hedef müşteri kitlesine göre değişir.
+              Günlük giyim, ofis kombinleri, özel gün ürünleri veya sezonluk
+              koleksiyonlar için farklı modeller tercih edilebilir.
+            </p>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-black">
-                İstanbul'dan kadın giyim tedariki
-              </h2>
+            <p className="mt-4">
+              Başarılı bir ürün seçimi için modelin yanında fiyat, kalite,
+              beden seçenekleri ve stok devamlılığının da değerlendirilmesi
+              gerekir. Böylece yalnızca dikkat çeken değil, işletmenin satış
+              modeline uygun ürünler tercih edilebilir.
+            </p>
+          </section>
 
-              <p className="mt-4">
-                Her işletmenin İstanbul'a gelip tek tek mağaza ve tedarikçi
-                araştırması mümkün olmayabilir. Rota Tedarik bu noktada
-                İstanbul tekstil piyasasındaki ürünleri araştırarak ihtiyaç
-                duyulan kadın giyim ürünlerinin bulunmasına ve sipariş
-                sürecinin yönetilmesine yardımcı olur.
-              </p>
+          <section>
+            <h2 className="mb-4 text-2xl font-semibold text-[#242321]">
+              Online kadın giyim satıcıları hangi modelleri tercih ediyor?
+            </h2>
 
-              <p className="mt-4">
-                Özellikle Türkiye'nin farklı şehirlerindeki butik, mağaza ve
-                online satış yapan işletmeler için ürün araştırma ve tedarik
-                sürecini tek noktadan yönetmek zaman kazandırabilir.
-              </p>
-            </section>
+            <p>
+              Instagram ve e-ticaret üzerinden satış yapan işletmeler için
+              ürünün görsel olarak dikkat çekmesi kadar farklı kombinlerde
+              kullanılabilmesi de önemlidir.
+            </p>
 
-            <section>
-              <h2 className="text-2xl font-semibold text-black">
-                Merter toptan kadın giyim modelleri için bize ulaşın
-              </h2>
+            <p className="mt-4">
+              Online satıcılar ürün araştırırken sezonun öne çıkan modellerini,
+              müşterilerinin talep ettiği ürün gruplarını ve işletmelerinin
+              fiyat segmentini birlikte değerlendirebilir.
+            </p>
+          </section>
 
-              <p className="mt-4">
-                Aradığınız kadın giyim modelini bize iletin. İstanbul
-                piyasasında araştırıp uygun ürünleri bulmaya ve Türkiye
-                geneline tedarik sürecini yönetmeye yardımcı olalım.
-              </p>
+          <section>
+            <h2 className="mb-4 text-2xl font-semibold text-[#242321]">
+              Merter toptan kadın giyim modellerinde fiyat araştırması
+            </h2>
 
+            <p>
+              Toptan kadın giyim fiyatları model, kumaş, üretim detayları,
+              sipariş adedi ve dönemsel piyasa koşullarına göre değişebilir.
+              Bu nedenle aynı ürün grubundaki modeller arasında fiyat
+              karşılaştırması yapılması önemlidir.
+            </p>
+
+            <p className="mt-4">
+              Düzenli ürün alan işletmeler için uygun fiyat kadar ürün
+              kalitesi, stok devamlılığı ve tedarik süresi de satın alma
+              kararında dikkate alınmalıdır.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-2xl font-semibold text-[#242321]">
+              İstanbul tekstil piyasasından kadın giyim tedariki
+            </h2>
+
+            <p>
+              Merter'in yanı sıra Bayrampaşa gibi İstanbul'un farklı tekstil
+              bölgeleri de kadın giyim ürünleri araştırılırken değerlendirilebilir.
+              Böylece işletmeler tek bir ürün kaynağına bağlı kalmadan farklı
+              seçenekleri karşılaştırabilir.
+            </p>
+
+            <p className="mt-4">
+              Rota Tedarik, işletmelerin ürün ihtiyacını belirleyerek İstanbul
+              tekstil piyasasında uygun kadın giyim modellerinin araştırılması
+              ve tedarik sürecinin organize edilmesi konusunda destek sağlar.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="mb-4 text-2xl font-semibold text-[#242321]">
+              Merter toptan kadın giyim modelleri seçerken kontrol listesi
+            </h2>
+
+            <ul className="space-y-3">
+              <li>• Modelin hedef müşteriye uygunluğu</li>
+              <li>• Kumaş ve ürün kalitesi</li>
+              <li>• Beden ve renk seçenekleri</li>
+              <li>• Güncel stok durumu</li>
+              <li>• Toptan fiyat avantajı</li>
+              <li>• Sezon ve kullanım alanı</li>
+              <li>• Kargo ve tedarik süresi</li>
+            </ul>
+          </section>
+
+          <section className="border-t border-black/10 pt-12">
+            <h2 className="mb-4 text-2xl font-semibold text-[#242321]">
+              Merter'den kadın giyim modeli mi arıyorsunuz?
+            </h2>
+
+            <p>
+              Aradığınız ürün grubunu veya modeli WhatsApp üzerinden bize
+              iletin. İstanbul tekstil piyasasında ürün araştırması yaparak
+              işletmenize uygun kadın giyim ürünlerinin tedarik sürecinde
+              yardımcı olalım.
+            </p>
+
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
-                href={whatsapp}
+                href="https://wa.me/905324975361"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex rounded-full bg-[#242321] px-7 py-4 text-sm font-semibold text-white transition hover:opacity-90"
+                className="inline-flex items-center justify-center rounded-full bg-[#242321] px-7 py-4 text-sm font-medium text-white"
               >
                 WhatsApp'tan Model Sor
               </a>
-            </section>
-
-            <section>
-              <h2 className="text-2xl font-semibold text-black">
-                Sık Sorulan Sorular
-              </h2>
-
-              <div className="mt-6 space-y-6">
-                <div>
-                  <h3 className="font-semibold">
-                    Merter toptan kadın giyim modelleri nelerdir?
-                  </h3>
-                  <p className="mt-2">
-                    Elbise, bluz, gömlek, etek, pantolon, takım, triko, hırka
-                    ve ceket gibi farklı kadın giyim ürünleri bulunabilir.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold">
-                    Merter'den kadın giyim ürünü tedarik edebilir miyim?
-                  </h3>
-                  <p className="mt-2">
-                    Evet. Rota Tedarik üzerinden ihtiyaç duyduğunuz ürünleri
-                    ileterek İstanbul tekstil piyasasında ürün araştırması ve
-                    tedarik desteği alabilirsiniz.
-                  </p>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold">
-                    Türkiye'nin her yerine gönderim yapılabilir mi?
-                  </h3>
-                  <p className="mt-2">
-                    Siparişin niteliğine ve ürün durumuna göre Türkiye geneline
-                    kargo ve sevkiyat süreci planlanabilir.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-          </div>
-
-          <aside className="h-fit rounded-[1.5rem] bg-[#242321] p-7 text-white">
-            <p className="text-xs uppercase tracking-[0.2em] text-white/50">
-              İlgili içerikler
-            </p>
-
-            <div className="mt-6 space-y-4 text-sm leading-6">
-              <Link
-                href="/blog/merter-toptan-kadin-giyim"
-                className="block border-b border-white/15 pb-4 hover:text-white/70"
-              >
-                Merter Toptan Kadın Giyim
-              </Link>
 
               <Link
-                href="/blog/merter-kadin-giyim-toptancilari"
-                className="block border-b border-white/15 pb-4 hover:text-white/70"
+                href="/blog/merter-toptan-kadin-giyim-siparisi"
+                className="inline-flex items-center justify-center rounded-full border border-black/15 px-7 py-4 text-sm font-medium"
               >
-                Merter Kadın Giyim Toptancıları
-              </Link>
-
-              <Link
-                href="/blog/merter-kadin-giyim-tedarikcisi"
-                className="block border-b border-white/15 pb-4 hover:text-white/70"
-              >
-                Merter Kadın Giyim Tedarikçisi
-              </Link>
-
-              <Link
-                href="/blog/merter-toptan-kadin-giyim-fiyatlari"
-                className="block border-b border-white/15 pb-4 hover:text-white/70"
-              >
-                Merter Toptan Kadın Giyim Fiyatları
-              </Link>
-
-              <Link
-                href="/blog/merter-hazir-giyim"
-                className="block hover:text-white/70"
-              >
-                Merter Hazır Giyim
+                Toptan Kadın Giyim Siparişi
               </Link>
             </div>
-          </aside>
-        </div>
-
-        <div className="mt-16 border-t border-black/10 pt-8 text-sm text-black/50">
-          Rota Tedarik · İstanbul tekstil piyasalarından kadın giyim tedariki
+          </section>
         </div>
       </article>
-
-      <a
-        href={whatsapp}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="WhatsApp"
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-xl"
-      >
-        <svg
-          viewBox="0 0 32 32"
-          className="h-7 w-7 fill-white"
-          aria-hidden="true"
-        >
-          <path d="M19.11 17.21c-.28-.14-1.65-.81-1.91-.9-.26-.1-.45-.14-.64.14-.19.28-.73.9-.9 1.08-.16.19-.33.21-.61.07-.28-.14-1.17-.43-2.23-1.38-.82-.73-1.38-1.62-1.54-1.9-.16-.28-.02-.43.12-.57.13-.13.28-.33.42-.49.14-.16.19-.28.28-.47.09-.19.05-.35-.02-.49-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.54c-.19 0-.49.07-.75.35-.26.28-.99.97-.99 2.36s1.01 2.74 1.15 2.93c.14.19 1.98 3.02 4.8 4.24.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.12-.26-.19-.54-.33z" />
-          <path d="M16 3.2A12.8 12.8 0 0 0 5.04 22.63L3.2 28.8l6.34-1.66A12.8 12.8 0 1 0 16 3.2zm0 23.27c-2.05 0-4.05-.55-5.8-1.59l-.42-.25-3.76.98 1.01-3.66-.27-.43A10.47 10.47 0 1 1 16 26.47z" />
-        </svg>
-      </a>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: "Merter Toptan Kadın Giyim Modelleri",
-            description:
-              "Merter toptan kadın giyim modelleri ve İstanbul'dan kadın giyim tedariki hakkında bilgiler.",
-            author: {
-              "@type": "Organization",
-              name: "Rota Tedarik",
-            },
-            publisher: {
-              "@type": "Organization",
-              name: "Rota Tedarik",
-            },
-            mainEntityOfPage: {
-              "@type": "WebPage",
-              "@id":
-                "https://www.merterdentedarik.com/blog/merter-toptan-kadin-giyim-modelleri",
-            },
-          }),
-        }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: "Merter toptan kadın giyim modelleri nelerdir?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Elbise, bluz, gömlek, etek, pantolon, takım, triko, hırka ve ceket gibi farklı kadın giyim ürünleri bulunabilir.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Merter'den kadın giyim ürünü tedarik edebilir miyim?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Rota Tedarik üzerinden ihtiyaç duyduğunuz ürünleri ileterek İstanbul tekstil piyasasında ürün araştırması ve tedarik desteği alabilirsiniz.",
-                },
-              },
-              {
-                "@type": "Question",
-                name: "Türkiye'nin her yerine gönderim yapılabilir mi?",
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: "Siparişin niteliğine ve ürün durumuna göre Türkiye geneline kargo ve sevkiyat süreci planlanabilir.",
-                },
-              },
-            ],
-          }),
-        }}
-      />
     </main>
   );
 }
