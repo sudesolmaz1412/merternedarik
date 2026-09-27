@@ -364,6 +364,41 @@ export default function Page() {
             </a>
           </div>
         </section>
+      
+        {/* SEO-KUME-IC-LINK */}
+        <section className="border-t border-black/10 bg-[#f5f2eb]">
+          <div className="mx-auto max-w-5xl px-6 py-14">
+            <p className="text-xs font-black tracking-[.2em] text-black/35">
+              E-TİCARET İÇİN TOPTAN KADIN GİYİM
+            </p>
+
+            <h2 className="mt-4 text-3xl font-black">
+              Diğer kadın giyim ürünlerini inceleyin
+            </h2>
+
+            <div className="mt-7 grid gap-3 md:grid-cols-3">
+              <Link
+                href="/blog/e-ticaret-icin-toptan-elbise"
+                className="rounded-2xl border border-black/10 bg-white p-5 font-bold transition hover:border-black/30"
+              >
+                E-Ticaret İçin Toptan Elbise →
+              </Link>
+              <Link
+                href="/blog/e-ticaret-icin-toptan-pantolon"
+                className="rounded-2xl border border-black/10 bg-white p-5 font-bold transition hover:border-black/30"
+              >
+                E-Ticaret İçin Toptan Pantolon →
+              </Link>
+              <Link
+                href="/blog/internetten-satmak-icin-kadin-giyim-urunleri"
+                className="rounded-2xl border border-black/10 bg-white p-5 font-bold transition hover:border-black/30"
+              >
+                İnternetten Satmak İçin Kadın Giyim Ürünleri →
+              </Link>
+            </div>
+          </div>
+        </section>
+
       </article>
 
       {/* MOBİL SABİT WHATSAPP */}
