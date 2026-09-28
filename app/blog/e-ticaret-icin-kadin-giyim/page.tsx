@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "E-Ticaret İçin Kadın Giyim | Ürün ve Tedarik Rehberi",
+  title: "E-Ticaret İçin Kadın Giyim | Toptan Ürün Tedariği",
   description:
-    "E-ticaret için kadın giyim ürünleri, model seçimi ve ürün tedariği. Online butik açmak isteyenler için kadın giyim, toptan ürün ve tedarik rehberi.",
+    "E-ticaret için kadın giyim ürünleri arıyorsanız Merter'den toptan ürün tedariği. Elbise, pantolon, takım ve kadın giyim modelleri için ürün görselini gönderin.",
   alternates: {
     canonical:
       "https://www.merterdentedarik.com/blog/e-ticaret-icin-kadin-giyim",
@@ -12,38 +12,29 @@ export const metadata: Metadata = {
 };
 
 const whatsapp =
-  "https://wa.me/905324975361?text=Merhaba%2C%20e-ticaret%20i%C3%A7in%20kad%C4%B1n%20giyim%20%C3%BCr%C3%BCnleri%20tedarik%20etmek%20istiyorum.";
+  "https://wa.me/905324975361?text=Merhaba%2C%20e-ticaret%20i%C3%A7in%20kad%C4%B1n%20giyim%20%C3%BCr%C3%BCnleri%20ar%C4%B1yorum.%20%C3%9Cr%C3%BCn%20g%C3%B6rseli%20g%C3%B6ndermek%20istiyorum.";
 
-const categories = [
+const urunler = [
   {
-    title: "Kadın Takım",
-    text: "Ceket-pantolon ve ikili takım seçenekleriyle online mağazanız için kombin odaklı bir kategori oluşturabilirsiniz.",
+    title: "Toptan Elbise",
+    text: "Online kadın giyim mağazanız için farklı elbise modellerini araştırın.",
+    href: "/blog/e-ticaret-icin-toptan-elbise",
   },
   {
-    title: "Elbise",
-    text: "Günlük, sezonluk ve şık kadın elbise modelleri farklı müşteri gruplarına yönelik koleksiyonlarda değerlendirilebilir.",
+    title: "Toptan Pantolon",
+    text: "E-ticaret için kadın pantolon modelleri ve ürün seçeneklerini araştırın.",
+    href: "/blog/e-ticaret-icin-toptan-pantolon",
   },
   {
-    title: "Ceket",
-    text: "Kadın ceket modelleri özellikle geçiş sezonlarında koleksiyonu tamamlayan ürün gruplarından biridir.",
-  },
-  {
-    title: "Triko",
-    text: "Kazaktan hırkaya farklı triko ürünleri sonbahar ve kış döneminde koleksiyona eklenebilir.",
-  },
-  {
-    title: "Bluz & Üst Giyim",
-    text: "Farklı model ve fiyat seçenekleriyle ürün çeşitliliği oluşturmak için kullanılabilecek geniş bir kategoridir.",
-  },
-  {
-    title: "Yeni Sezon",
-    text: "Yeni sezon modelleri mağazanızın koleksiyonunu güncel tutmak için düzenli olarak değerlendirilebilir.",
+    title: "Toptan Kadın Takım",
+    text: "Online satış için ikili takım, ceket pantolon ve farklı kadın takım modelleri.",
+    href: "/blog/e-ticaret-icin-toptan-kadin-takim",
   },
 ];
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#f6f4ef] text-[#1d2327]">
+    <main className="min-h-screen bg-[#f5f2eb] text-[#1d2226] pb-20 md:pb-0">
       <header className="border-b border-black/10 bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
           <Link href="/" className="font-black tracking-[.16em]">
@@ -54,66 +45,65 @@ export default function Page() {
             href={whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-[#1d2327] px-5 py-3 text-xs font-bold text-white"
+            className="rounded-full bg-black px-5 py-3 text-xs font-black text-white"
           >
-            ÜRÜN TEDARİĞİ →
+            ÜRÜN BUL →
           </a>
         </div>
       </header>
 
       <article>
+        {/* HERO */}
         <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-          <div className="max-w-5xl">
-            <p className="text-xs font-black tracking-[.24em] text-black/40">
-              E-TİCARET • KADIN GİYİM • ONLINE BUTİK
-            </p>
+          <p className="text-xs font-black tracking-[.24em] text-black/40">
+            E-TİCARET • KADIN GİYİM • ÜRÜN TEDARİĞİ
+          </p>
 
-            <h1 className="mt-6 max-w-5xl text-5xl font-black leading-[.96] tracking-[-.045em] md:text-7xl">
-              E-Ticaret İçin
-              <span className="block">Kadın Giyim</span>
-            </h1>
+          <h1 className="mt-6 max-w-5xl text-5xl font-black leading-[.94] tracking-[-.045em] md:text-7xl">
+            E-Ticaret İçin
+            <span className="block">Kadın Giyim</span>
+          </h1>
 
-            <p className="mt-8 max-w-3xl text-lg leading-8 text-black/60">
-              E-ticaret için kadın giyim satışı yapmak isteyen butik, mağaza ve
-              girişimciler için ürün seçimi ve tedarik rehberi. Hangi ürün
-              gruplarını değerlendirebileceğinizi, koleksiyonunuzu nasıl
-              planlayabileceğinizi ve ürün tedariğini nasıl yapabileceğinizi
-              inceleyin.
-            </p>
+          <p className="mt-8 max-w-3xl text-lg leading-8 text-black/60">
+            E-ticaret sitesi, Instagram mağazası veya online butik için kadın
+            giyim ürünleri mi arıyorsunuz? Satmak istediğiniz ürünün
+            fotoğrafını bize gönderin. Merter'deki aynı veya benzer ürün
+            seçeneklerini araştıralım.
+          </p>
 
-            <div className="mt-9 flex flex-wrap gap-3">
-              <a
-                href="#urunler"
-                className="rounded-full bg-[#1d2327] px-7 py-4 text-sm font-bold text-white"
-              >
-                KADIN GİYİM ÜRÜNLERİ →
-              </a>
+          <div className="mt-9 flex flex-wrap gap-3">
+            <a
+              href={whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-black px-7 py-4 text-sm font-black text-white"
+            >
+              ÜRÜN FOTOĞRAFI GÖNDER →
+            </a>
 
-              <a
-                href={whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="rounded-full border border-black/15 bg-white px-7 py-4 text-sm font-bold"
-              >
-                ÜRÜN FOTOĞRAFI GÖNDER
-              </a>
-            </div>
+            <a
+              href="#urunler"
+              className="rounded-full border border-black/15 bg-white px-7 py-4 text-sm font-black"
+            >
+              ÜRÜNLERE BAK
+            </a>
           </div>
         </section>
 
+        {/* INFO */}
         <section className="border-y border-black/10 bg-white">
           <div className="mx-auto grid max-w-6xl grid-cols-2 md:grid-cols-4">
             {[
               ["E-TİCARET", "Kadın Giyim"],
-              ["ONLINE BUTİK", "Ürün Seçimi"],
-              ["TOPTAN", "Ürün Tedariği"],
-              ["MERTER", "Tedarik Desteği"],
+              ["MERTER", "Ürün Tedariği"],
+              ["BUTİK", "Toptan Ürün"],
+              ["TÜRKİYE", "Gönderim"],
             ].map(([title, text]) => (
               <div
                 key={title}
-                className="border-b border-r border-black/10 p-7"
+                className="border-b border-r border-black/10 p-7 md:border-b-0"
               >
-                <strong className="block text-lg md:text-xl">{title}</strong>
+                <strong className="block text-lg">{title}</strong>
                 <span className="mt-1 block text-sm text-black/45">
                   {text}
                 </span>
@@ -122,207 +112,298 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="urunler" className="mx-auto max-w-6xl px-6 py-20">
+        {/* SEARCH INTENT */}
+        <section className="mx-auto max-w-5xl px-6 py-20">
           <p className="text-xs font-black tracking-[.22em] text-black/40">
-            E-TİCARET ÜRÜNLERİ
+            ONLINE SATIŞ İÇİN ÜRÜN
           </p>
 
-          <h2 className="mt-4 max-w-4xl text-4xl font-black tracking-tight md:text-5xl">
-            E-Ticaret İçin Hangi Kadın Giyim Ürünleri Seçilebilir?
+          <h2 className="mt-4 max-w-4xl text-4xl font-black md:text-5xl">
+            E-Ticaret İçin Kadın Giyim Ürünleri Nasıl Bulunur?
+          </h2>
+
+          <p className="mt-7 text-lg leading-8 text-black/65">
+            İnternetten kadın giyim satmak isteyen işletmeler için en önemli
+            konulardan biri doğru ürün tedariğidir. Online mağazanızın hedef
+            kitlesine uygun elbise, pantolon, kadın takım ve farklı kadın
+            giyim ürünlerini belirleyerek koleksiyonunuzu oluşturabilirsiniz.
+          </p>
+
+          <p className="mt-5 text-lg leading-8 text-black/65">
+            E-ticaret için kadın giyim ürünü ararken beğendiğiniz modelin
+            fotoğrafını veya ekran görüntüsünü bize gönderebilirsiniz.
+            Merter'deki ürün seçenekleri arasından aynı veya benzer modeller
+            için araştırma yapılabilir.
+          </p>
+        </section>
+
+        {/* BIG CTA */}
+        <section className="bg-[#1d2226] text-white">
+          <div className="mx-auto max-w-5xl px-6 py-20">
+            <p className="text-xs font-black tracking-[.22em] text-white/40">
+              ÜRÜNÜ GÖSTERİN
+            </p>
+
+            <h2 className="mt-5 max-w-4xl text-4xl font-black leading-tight md:text-6xl">
+              İnternette gördüğünüz
+              <span className="block">kadın giyim ürününü gönderin.</span>
+            </h2>
+
+            <p className="mt-7 max-w-3xl text-lg leading-8 text-white/60">
+              Instagram'da, pazaryerinde veya başka bir e-ticaret sitesinde
+              gördüğünüz ürünü WhatsApp'tan gönderin. Merter'deki aynı veya
+              benzer ürün seçeneklerini araştıralım.
+            </p>
+
+            <a
+              href={whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-9 inline-block rounded-full bg-white px-8 py-4 font-black text-black"
+            >
+              ÜRÜN GÖRSELİNİ WHATSAPP'TAN GÖNDER →
+            </a>
+          </div>
+        </section>
+
+        {/* PRODUCTS */}
+        <section id="urunler" className="mx-auto max-w-6xl px-6 py-20">
+          <p className="text-xs font-black tracking-[.22em] text-black/40">
+            E-TİCARET KADIN GİYİM ÜRÜNLERİ
+          </p>
+
+          <h2 className="mt-4 max-w-4xl text-4xl font-black md:text-5xl">
+            Online Mağazanızda Ne Satabilirsiniz?
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/60">
-            Kadın giyim e-ticaretinde ürün seçimi yaparken mağazanın hedef
-            kitlesi, sezonu, fiyat seviyesi ve genel tarzı birlikte
-            değerlendirilmelidir.
+            Kadın giyim e-ticaret mağazanız için farklı ürün gruplarıyla
+            koleksiyon oluşturabilirsiniz.
           </p>
 
-          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {categories.map((category, index) => (
-              <div
-                key={category.title}
-                className="rounded-3xl border border-black/10 bg-white p-7"
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {urunler.map((urun) => (
+              <Link
+                key={urun.title}
+                href={urun.href}
+                className="rounded-3xl border border-black/10 bg-white p-8 transition hover:border-black/30"
               >
-                <span className="text-xs font-black text-black/25">
-                  0{index + 1}
+                <span className="text-xs font-black tracking-[.16em] text-black/30">
+                  E-TİCARET İÇİN
                 </span>
 
-                <h3 className="mt-5 text-2xl font-black">
-                  {category.title}
+                <h3 className="mt-4 text-2xl font-black">{urun.title}</h3>
+
+                <p className="mt-4 leading-7 text-black/55">
+                  {urun.text}
+                </p>
+
+                <span className="mt-8 block font-black">
+                  İNCELE →
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-4 grid gap-4 md:grid-cols-3">
+            {["Triko", "Ceket", "Gömlek"].map((urun) => (
+              <div
+                key={urun}
+                className="rounded-3xl border border-black/10 bg-[#ebe7dd] p-8"
+              >
+                <span className="text-xs font-black tracking-[.16em] text-black/30">
+                  KADIN GİYİM
+                </span>
+
+                <h3 className="mt-4 text-2xl font-black">
+                  Toptan {urun}
                 </h3>
 
                 <p className="mt-4 leading-7 text-black/55">
-                  {category.text}
+                  E-ticaret mağazanız için aradığınız {urun.toLocaleLowerCase("tr-TR")}{" "}
+                  modelini bize gönderebilirsiniz.
                 </p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="bg-[#1d2327] text-white">
-          <div className="mx-auto max-w-5xl px-6 py-20">
-            <p className="text-xs font-black tracking-[.22em] text-white/40">
-              ONLINE MAĞAZA
-            </p>
-
-            <h2 className="mt-4 max-w-4xl text-4xl font-black md:text-5xl">
-              E-Ticaret İçin Kadın Giyim Ürünü Seçerken
-            </h2>
-
-            <div className="mt-10 grid gap-4 md:grid-cols-2">
-              {[
-                [
-                  "Hedef Kitleyi Belirleyin",
-                  "Mağazanızın hitap edeceği müşteri profilini belirleyerek ürün seçimini bu stile göre şekillendirebilirsiniz.",
-                ],
-                [
-                  "Koleksiyon Bütünlüğü",
-                  "Birbirleriyle kombinlenebilecek ürünler seçmek mağazanızın daha bütünlüklü görünmesini sağlayabilir.",
-                ],
-                [
-                  "Sezonu Takip Edin",
-                  "Mevsime ve dönemsel talebe uygun ürün gruplarını koleksiyon planlamasına dahil edin.",
-                ],
-                [
-                  "Stok Planlaması",
-                  "İlk aşamada ürün ve beden dağılımını kontrollü planlayıp satış verilerine göre koleksiyonu geliştirebilirsiniz.",
-                ],
-              ].map(([title, text]) => (
-                <div
-                  key={title}
-                  className="rounded-2xl border border-white/10 p-7"
-                >
-                  <h3 className="text-xl font-bold">{title}</h3>
-                  <p className="mt-3 leading-7 text-white/55">{text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-4xl px-6 py-20">
-          <h2 className="text-4xl font-black tracking-tight">
-            E-Ticaret İçin Kadın Giyim Tedarikçisi Nasıl Bulunur?
+        {/* SEO CONTENT */}
+        <section className="mx-auto max-w-4xl px-6 pb-20">
+          <h2 className="text-4xl font-black">
+            İnternetten Kadın Giyim Satmak
           </h2>
 
           <p className="mt-7 text-lg leading-8 text-black/65">
-            Kadın giyim e-ticaretinde ürün tedariği; üreticiler, toptancılar ve
-            tekstil ticaretinin yoğun olduğu bölgelerdeki tedarikçiler
-            üzerinden yapılabilir. Ürün seçiminde yalnızca fiyat değil; model,
-            beden dağılımı, stok durumu ve gönderim süreci de
-            değerlendirilmelidir.
+            İnternetten kadın giyim satışı yapmak isteyen işletmeler kendi
+            e-ticaret siteleri, sosyal medya mağazaları veya pazaryerleri
+            üzerinden ürünlerini müşterilere sunabilir. Ürün tedariğinde
+            hedef kitle, sezon, model, beden ve stok seçeneklerini birlikte
+            değerlendirmek önemlidir.
           </p>
 
-          <p className="mt-5 text-lg leading-8 text-black/65">
-            İstanbul Merter, kadın giyim ve tekstil ürünlerinin yoğun olarak
-            bulunduğu bölgelerden biridir. İstanbul dışında bulunan online
-            butik ve mağazalar da aradıkları ürünlerin fotoğraflarını
-            ileterek ürün tedarik talebi oluşturabilir.
-          </p>
+          <Link
+            href="/blog/internetten-satmak-icin-kadin-giyim-urunleri"
+            className="mt-6 inline-block font-black underline underline-offset-4"
+          >
+            İnternetten Satmak İçin Kadın Giyim Ürünleri →
+          </Link>
 
           <h2 className="mt-14 text-3xl font-black md:text-4xl">
             E-Ticaret İçin Toptan Kadın Giyim
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-black/65">
-            Toptan kadın giyim alımında koleksiyonun tamamını tek ürüne
-            bağlamak yerine farklı ürün gruplarıyla ürün karması
-            oluşturulabilir. Takım, ceket, elbise, triko ve üst giyim gibi
-            birbirini tamamlayan kategoriler birlikte değerlendirilebilir.
+            Online mağazada satılacak ürünlerin düzenli şekilde tedarik
+            edilebilmesi önemlidir. Kadın giyim tarafında elbise, pantolon,
+            takım, triko, ceket ve gömlek gibi farklı ürün grupları
+            değerlendirilebilir.
           </p>
 
+          <Link
+            href="/blog/e-ticaret-icin-toptan-kadin-giyim-modelleri"
+            className="mt-6 inline-block font-black underline underline-offset-4"
+          >
+            E-Ticaret İçin Toptan Kadın Giyim Modelleri →
+          </Link>
+
           <h2 className="mt-14 text-3xl font-black md:text-4xl">
-            Yeni E-Ticaret Mağazaları İçin Kadın Giyim
+            Kadın Giyim Ürünleri Nereden Alınır?
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-black/65">
-            Kadın giyim satışına yeni başlayan bir e-ticaret mağazasında ilk
-            koleksiyonun hedef müşteri profiline göre oluşturulması önemlidir.
-            Satış verileri oluşmaya başladıkça ilgi gören ürün grupları
-            genişletilebilir ve yeni modeller koleksiyona eklenebilir.
+            Kadın giyim ürünleri üreticilerden, toptancılardan ve tekstil
+            ticaretinin yoğun olduğu bölgelerdeki tedarikçilerden temin
+            edilebilir. İstanbul Merter de kadın giyim toptan ticaretinin
+            yoğun olduğu bölgelerden biridir.
           </p>
 
-          <div className="mt-14 rounded-3xl bg-[#ebe7dd] p-8 md:p-10">
-            <p className="text-xs font-black tracking-[.2em] text-black/40">
-              ÜRÜN TEDARİĞİ
+          <Link
+            href="/blog/internetten-kadin-giyim-satmak-icin-urun-nereden-alinir"
+            className="mt-6 inline-block font-black underline underline-offset-4"
+          >
+            Kadın Giyim Satmak İçin Ürün Nereden Alınır? →
+          </Link>
+
+          <h2 className="mt-14 text-3xl font-black md:text-4xl">
+            Online Butik İçin Kadın Giyim Ürünleri
+          </h2>
+
+          <p className="mt-6 text-lg leading-8 text-black/65">
+            Online butik açarken tek bir ürün grubuna veya farklı kadın giyim
+            kategorilerine odaklanabilirsiniz. Aradığınız modellerin
+            görsellerini bize göndererek Merter'deki ürün seçeneklerini
+            araştırabilirsiniz.
+          </p>
+
+          {/* HUB */}
+          <div className="mt-16 rounded-[2rem] border border-black/10 bg-white p-8 md:p-12">
+            <p className="text-xs font-black tracking-[.2em] text-black/35">
+              E-TİCARET KADIN GİYİM REHBERİ
             </p>
 
-            <h2 className="mt-4 text-3xl font-black md:text-4xl">
-              E-ticaret mağazanız için aradığınız modeli gönderin
+            <h2 className="mt-4 text-3xl font-black">
+              Kadın giyim tedarik rehberleri
             </h2>
 
-            <p className="mt-5 max-w-2xl leading-7 text-black/60">
-              Beğendiğiniz kadın giyim modelinin fotoğrafını WhatsApp
-              üzerinden iletin. Merter'deki ürün ve tedarik seçeneklerini
-              araştırarak size yardımcı olalım.
-            </p>
-
-            <a
-              href={whatsapp}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-7 inline-block rounded-full bg-[#1d2327] px-7 py-4 text-sm font-bold text-white"
-            >
-              WHATSAPP'TAN MODEL GÖNDER →
-            </a>
-          </div>
-
-          <div className="mt-14 border-t border-black/10 pt-10">
-            <p className="text-xs font-black tracking-[.2em] text-black/35">
-              E-TİCARET KADIN GİYİM REHBERLERİ
-            </p>
-
-            <div className="mt-6 flex flex-col gap-4">
+            <div className="mt-8 grid gap-3 md:grid-cols-2">
               <Link
-                href="/blog/e-ticaret-icin-kadin-giyim-modelleri"
-                className="border-b border-black/10 pb-4 font-bold"
+                href="/blog/e-ticaret-icin-kadin-giyim-urunleri"
+                className="rounded-2xl bg-[#f5f2eb] p-5 font-bold"
               >
-                E-Ticaret İçin Kadın Giyim Modelleri →
+                E-Ticaret İçin Kadın Giyim Ürünleri →
               </Link>
 
               <Link
-                href="/blog/merter-toptan-kadin-giyim"
-                className="border-b border-black/10 pb-4 font-bold"
+                href="/blog/e-ticaret-icin-toptan-kadin-giyim-modelleri"
+                className="rounded-2xl bg-[#f5f2eb] p-5 font-bold"
               >
-                Merter Toptan Kadın Giyim →
+                E-Ticaret İçin Toptan Kadın Giyim Modelleri →
               </Link>
 
               <Link
-                href="/blog/merter-toptan"
-                className="font-bold"
+                href="/blog/internetten-satmak-icin-kadin-giyim-urunleri"
+                className="rounded-2xl bg-[#f5f2eb] p-5 font-bold"
               >
-                Merter Toptan →
+                İnternetten Satmak İçin Kadın Giyim →
+              </Link>
+
+              <Link
+                href="/blog/internetten-kadin-giyim-satmak-icin-urun-nereden-alinir"
+                className="rounded-2xl bg-[#f5f2eb] p-5 font-bold"
+              >
+                Kadın Giyim Ürünü Nereden Alınır? →
+              </Link>
+
+              <Link
+                href="/blog/e-ticaret-icin-toptan-elbise"
+                className="rounded-2xl bg-[#f5f2eb] p-5 font-bold"
+              >
+                E-Ticaret İçin Toptan Elbise →
+              </Link>
+
+              <Link
+                href="/blog/e-ticaret-icin-toptan-pantolon"
+                className="rounded-2xl bg-[#f5f2eb] p-5 font-bold"
+              >
+                E-Ticaret İçin Toptan Pantolon →
+              </Link>
+
+              <Link
+                href="/blog/e-ticaret-icin-toptan-kadin-takim"
+                className="rounded-2xl bg-[#f5f2eb] p-5 font-bold"
+              >
+                E-Ticaret İçin Toptan Kadın Takım →
+              </Link>
+
+              <Link
+                href="/blog/merter-toptancilar"
+                className="rounded-2xl bg-[#f5f2eb] p-5 font-bold"
+              >
+                Merter Toptancılar →
               </Link>
             </div>
           </div>
-        </section>
 
-        <section className="bg-[#1d2327] text-white">
-          <div className="mx-auto max-w-4xl px-6 py-20 text-center">
-            <p className="text-xs font-black tracking-[.22em] text-white/40">
-              E-TİCARET İÇİN KADIN GİYİM
+          {/* FINAL CTA */}
+          <div className="mt-14 rounded-[2rem] bg-[#e9e4d9] p-8 md:p-12">
+            <p className="text-xs font-black tracking-[.2em] text-black/40">
+              ROTA TEDARİK
             </p>
 
-            <h2 className="mt-5 text-4xl font-black md:text-5xl">
-              Ürünü siz seçin, tedariğini birlikte çözelim.
+            <h2 className="mt-4 text-3xl font-black md:text-5xl">
+              E-ticarette satmak istediğiniz ürünü gönderin.
             </h2>
 
-            <p className="mx-auto mt-5 max-w-2xl leading-7 text-white/55">
-              Online mağazanız için aradığınız kadın giyim ürününün fotoğrafını
-              WhatsApp üzerinden gönderebilirsiniz.
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-black/60">
+              Kadın giyim ürününün ekran görüntüsünü veya fotoğrafını
+              WhatsApp'tan gönderin. Merter'deki ürün seçeneklerini
+              araştıralım.
             </p>
 
             <a
               href={whatsapp}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-8 inline-block rounded-full bg-white px-8 py-4 font-bold text-black"
+              className="mt-8 inline-block rounded-full bg-black px-8 py-4 font-black text-white"
             >
               ÜRÜN FOTOĞRAFI GÖNDER →
             </a>
           </div>
         </section>
       </article>
+
+      {/* MOBILE CTA */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-[#1d2226] p-3 md:hidden">
+        <a
+          href={whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block rounded-full bg-white px-5 py-4 text-center text-sm font-black text-black"
+        >
+          E-TİCARET İÇİN ÜRÜN BUL →
+        </a>
+      </div>
     </main>
   );
 }
