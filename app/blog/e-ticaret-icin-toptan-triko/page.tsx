@@ -1,0 +1,279 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "E-Ticaret İçin Toptan Triko | Kadın Triko Tedariği",
+  description:
+    "E-ticaret için toptan kadın triko ürünleri. Kazak, hırka ve farklı triko modelleri için ürün görselini gönderin, Merter'den araştıralım.",
+  alternates: {
+    canonical:
+      "https://www.merterdentedarik.com/blog/e-ticaret-icin-toptan-triko",
+  },
+};
+
+const whatsapp =
+  "https://wa.me/905324975361?text=Merhaba%2C%20e-ticaret%20i%C3%A7in%20toptan%20kad%C4%B1n%20triko%20%C3%BCr%C3%BCnleri%20ar%C4%B1yorum.%20%C3%9Cr%C3%BCn%20foto%C4%9Fraf%C4%B1%20g%C3%B6ndermek%20istiyorum.";
+
+export default function Page() {
+  return (
+    <main className="min-h-screen bg-[#f5f2eb] text-[#1d2226] pb-20 md:pb-0">
+      <header className="border-b border-black/10 bg-white">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+          <Link href="/" className="font-black tracking-[.16em]">
+            ROTA TEDARİK
+          </Link>
+
+          <a
+            href={whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="rounded-full bg-black px-5 py-3 text-xs font-black text-white"
+          >
+            TRİKO BUL →
+          </a>
+        </div>
+      </header>
+
+      <article>
+        <section className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
+          <div>
+            <p className="text-xs font-black tracking-[.24em] text-black/40">
+              E-TİCARET • TOPTAN TRİKO • MERTER
+            </p>
+
+            <h1 className="mt-6 text-5xl font-black leading-[.94] tracking-[-.045em] md:text-7xl">
+              E-Ticaret İçin
+              <span className="block">Toptan Triko</span>
+            </h1>
+
+            <p className="mt-8 text-lg leading-8 text-black/60">
+              Online mağazanız veya butiğiniz için kadın triko ürünleri mi
+              arıyorsunuz? Beğendiğiniz kazak, hırka veya triko modelinin
+              fotoğrafını gönderin. Merter'deki aynı veya benzer ürün
+              seçeneklerini araştıralım.
+            </p>
+
+            <div className="mt-9 flex flex-wrap gap-3">
+              <a
+                href={whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-black px-7 py-4 text-sm font-black text-white"
+              >
+                TRİKO FOTOĞRAFI GÖNDER →
+              </a>
+
+              <Link
+                href="/blog/e-ticaret-icin-kadin-giyim"
+                className="rounded-full border border-black/15 bg-white px-7 py-4 text-sm font-black"
+              >
+                E-TİCARET KADIN GİYİM →
+              </Link>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-[2rem] bg-white p-3 shadow-sm">
+            <img
+              src="/images/kadinkazak.jpeg"
+              alt="E-ticaret için toptan kadın triko ve kazak modelleri"
+              className="h-[480px] w-full rounded-[1.5rem] object-cover"
+            />
+          </div>
+        </section>
+
+        <section className="border-y border-black/10 bg-white">
+          <div className="mx-auto grid max-w-6xl grid-cols-2 md:grid-cols-4">
+            {[
+              ["TRİKO", "Kadın Giyim"],
+              ["KAZAK", "Toptan Ürün"],
+              ["E-TİCARET", "Ürün Tedariği"],
+              ["MERTER", "Model Araştırma"],
+            ].map(([title, text]) => (
+              <div
+                key={title}
+                className="border-b border-r border-black/10 p-7 md:border-b-0"
+              >
+                <strong className="block text-lg">{title}</strong>
+                <span className="mt-1 block text-sm text-black/45">{text}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-5xl px-6 py-20">
+          <p className="text-xs font-black tracking-[.22em] text-black/40">
+            TOPTAN KADIN TRİKO
+          </p>
+
+          <h2 className="mt-4 text-4xl font-black md:text-5xl">
+            E-Ticaret İçin Kadın Triko Ürünleri
+          </h2>
+
+          <p className="mt-7 text-lg leading-8 text-black/65">
+            Triko ürünler özellikle sonbahar ve kış koleksiyonlarında online
+            kadın giyim mağazalarının değerlendirebileceği ürün gruplarından
+            biridir. Kazak, hırka ve farklı triko modelleri mağazanın hedef
+            kitlesine göre koleksiyona eklenebilir.
+          </p>
+
+          <p className="mt-5 text-lg leading-8 text-black/65">
+            Rota Tedarik ile aradığınız ürünü tarif etmek yerine doğrudan
+            görselini gönderebilirsiniz. Ürün fotoğrafı üzerinden Merter'deki
+            aynı veya benzer modeller araştırılabilir.
+          </p>
+        </section>
+
+        <section className="bg-[#1d2226] text-white">
+          <div className="mx-auto max-w-5xl px-6 py-20">
+            <p className="text-xs font-black tracking-[.22em] text-white/40">
+              MODELİ GÖNDER
+            </p>
+
+            <h2 className="mt-5 max-w-4xl text-4xl font-black leading-tight md:text-6xl">
+              Beğendiğiniz trikoyu
+              <span className="block">bize gösterin.</span>
+            </h2>
+
+            <p className="mt-7 max-w-3xl text-lg leading-8 text-white/60">
+              Sosyal medyada, pazaryerinde veya başka bir online mağazada
+              gördüğünüz kadın triko ürününün ekran görüntüsünü
+              WhatsApp'tan gönderin.
+            </p>
+
+            <a
+              href={whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-9 inline-block rounded-full bg-white px-8 py-4 font-black text-black"
+            >
+              WHATSAPP'TAN TRİKO GÖNDER →
+            </a>
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-4xl px-6 py-20">
+          <h2 className="text-4xl font-black">
+            Online Butik İçin Toptan Triko
+          </h2>
+
+          <p className="mt-7 text-lg leading-8 text-black/65">
+            Online butik için triko tedarik ederken model, beden seçenekleri,
+            sezon, stok ve sipariş koşulları birlikte değerlendirilebilir.
+            Özellikle sezonluk satış yapan mağazalar farklı triko
+            modellerinden oluşan koleksiyonlar hazırlayabilir.
+          </p>
+
+          <Link
+            href="/blog/online-butik-icin-toptan-kadin-giyim"
+            className="mt-6 inline-block font-black underline underline-offset-4"
+          >
+            Online Butik İçin Toptan Kadın Giyim →
+          </Link>
+
+          <h2 className="mt-14 text-3xl font-black md:text-4xl">
+            Merter Toptan Kadın Triko
+          </h2>
+
+          <p className="mt-6 text-lg leading-8 text-black/65">
+            Merter'deki kadın giyim ürün seçenekleri arasında triko ve kazak
+            modelleri de araştırılabilir. Aradığınız model belliyse ürünün
+            görselini göndererek araştırmayı doğrudan model üzerinden
+            başlatabilirsiniz.
+          </p>
+
+          <Link
+            href="/blog/merter-toptan-kadin-kazak"
+            className="mt-6 inline-block font-black underline underline-offset-4"
+          >
+            Merter Toptan Kadın Kazak →
+          </Link>
+
+          <h2 className="mt-14 text-3xl font-black md:text-4xl">
+            E-Ticaret İçin Kadın Giyim Tedariği
+          </h2>
+
+          <p className="mt-6 text-lg leading-8 text-black/65">
+            Trikonun yanında elbise, pantolon, kadın takım ve diğer kadın
+            giyim kategorileri için de ürün araştırabilirsiniz. Böylece
+            e-ticaret mağazanız için farklı kategorilerden ürün seçeneklerini
+            değerlendirebilirsiniz.
+          </p>
+
+          <Link
+            href="/blog/e-ticaret-icin-kadin-giyim"
+            className="mt-6 inline-block font-black underline underline-offset-4"
+          >
+            E-Ticaret İçin Kadın Giyim →
+          </Link>
+
+          <div className="mt-14 grid gap-4 md:grid-cols-3">
+            <Link
+              href="/blog/e-ticaret-icin-toptan-elbise"
+              className="rounded-3xl border border-black/10 bg-white p-7"
+            >
+              <span className="text-xs font-black text-black/35">
+                E-TİCARET
+              </span>
+              <h3 className="mt-3 text-xl font-black">Toptan Elbise →</h3>
+            </Link>
+
+            <Link
+              href="/blog/e-ticaret-icin-toptan-pantolon"
+              className="rounded-3xl border border-black/10 bg-white p-7"
+            >
+              <span className="text-xs font-black text-black/35">
+                E-TİCARET
+              </span>
+              <h3 className="mt-3 text-xl font-black">Toptan Pantolon →</h3>
+            </Link>
+
+            <Link
+              href="/blog/e-ticaret-icin-toptan-kadin-takim"
+              className="rounded-3xl border border-black/10 bg-white p-7"
+            >
+              <span className="text-xs font-black text-black/35">
+                E-TİCARET
+              </span>
+              <h3 className="mt-3 text-xl font-black">Kadın Takım →</h3>
+            </Link>
+          </div>
+
+          <div className="mt-14 rounded-[2rem] bg-[#e9e4d9] p-8 md:p-12">
+            <p className="text-xs font-black tracking-[.2em] text-black/40">
+              ROTA TEDARİK
+            </p>
+
+            <h2 className="mt-4 text-3xl font-black md:text-5xl">
+              Aradığınız triko modelini gönderin.
+            </h2>
+
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-black/60">
+              Ürünün ekran görüntüsünü WhatsApp'tan gönderin. Merter'deki
+              aynı veya benzer kadın triko seçeneklerini araştıralım.
+            </p>
+
+            <a
+              href={whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-block rounded-full bg-black px-8 py-4 font-black text-white"
+            >
+              TRİKO FOTOĞRAFI GÖNDER →
+            </a>
+          </div>
+        </section>
+      </article>
+
+      <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-[#1d2226] p-3 md:hidden">
+        <a
+          href={whatsapp}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block rounded-full bg-white px-5 py-4 text-center text-sm font-black text-black"
+        >
+          TOPTAN TRİKO BUL →
+        </a>
+      </div>
+    </main>
+  );
+}
