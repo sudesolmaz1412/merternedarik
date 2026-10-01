@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Qustylse Toptan Kadın Giyim | Merter Tedarik",
+  title: "Qustyle Toptan Kadın Giyim | Merter Tedarik",
   description:
-    "Qustylse toptan kadın giyim ürünleri arayan butik ve e-ticaret mağazaları için ürün araştırma ve Merter tedarik hizmeti. Ürün görselini gönderin.",
+    "Qustyle toptan kadın giyim ürünleri arayan butik ve e-ticaret mağazaları için ürün araştırma ve Merter tedarik hizmeti. Ürün görselini gönderin.",
   alternates: {
     canonical:
-      "https://www.merterdentedarik.com/blog/qustylse-toptan-kadin-giyim",
+      "https://www.merterdentedarik.com/blog/qustyle-toptan-kadin-giyim",
   },
 };
 
 const whatsapp =
-  "https://wa.me/905324975361?text=Merhaba%2C%20Qustylse%20toptan%20kad%C4%B1n%20giyim%20%C3%BCr%C3%BCn%C3%BC%20ar%C4%B1yorum.%20%C3%9Cr%C3%BCn%20foto%C4%9Fraf%C4%B1%20g%C3%B6ndermek%20istiyorum.";
+  "https://wa.me/905324975361?text=Merhaba%2C%20Qustyle%20toptan%20kad%C4%B1n%20giyim%20%C3%BCr%C3%BCn%C3%BC%20ar%C4%B1yorum.%20%C3%9Cr%C3%BCn%20foto%C4%9Fraf%C4%B1%20g%C3%B6ndermek%20istiyorum.";
 
 export default function Page() {
   return (
@@ -38,16 +38,16 @@ export default function Page() {
         <section className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
           <div>
             <p className="text-xs font-black tracking-[.24em] text-black/40">
-              QUSTYLSE • TOPTAN • KADIN GİYİM
+              QUSTYLE • TOPTAN • KADIN GİYİM
             </p>
 
             <h1 className="mt-6 text-5xl font-black leading-[.93] tracking-[-.05em] md:text-7xl">
-              Qustylse Toptan
+              Qustyle Toptan
               <span className="block">Kadın Giyim</span>
             </h1>
 
             <p className="mt-8 text-lg leading-8 text-black/60">
-              Qustylse toptan kadın giyim ürünleri arıyorsanız ilgilendiğiniz
+              Qustyle toptan kadın giyim ürünleri arıyorsanız ilgilendiğiniz
               modelin fotoğrafını bize gönderebilirsiniz. Butik ve e-ticaret
               mağazanız için ürün ve benzer model seçeneklerini araştıralım.
             </p>
@@ -63,10 +63,10 @@ export default function Page() {
               </a>
 
               <Link
-                href="/blog/qustylse-toptan"
+                href="/blog/qustyle-toptan"
                 className="rounded-full border border-black/15 bg-white px-7 py-4 text-sm font-black"
               >
-                QUSTYLSE TOPTAN →
+                QUSTYLE TOPTAN →
               </Link>
             </div>
           </div>
@@ -74,7 +74,7 @@ export default function Page() {
           <div className="overflow-hidden rounded-[2rem] bg-white p-3 shadow-sm">
             <img
               src="/images/toptankadingiyim.jpeg"
-              alt="Qustylse toptan kadın giyim ürünleri"
+              alt="Qustyle toptan kadın giyim ürünleri"
               className="h-[510px] w-full rounded-[1.5rem] object-cover"
             />
           </div>
@@ -83,7 +83,7 @@ export default function Page() {
         <section className="border-y border-black/10 bg-white">
           <div className="mx-auto grid max-w-6xl grid-cols-2 md:grid-cols-4">
             {[
-              ["QUSTYLSE", "Ürün Araştırma"],
+              ["QUSTYLE", "Ürün Araştırma"],
               ["KADIN GİYİM", "Toptan Ürün"],
               ["MERTER", "Tedarik"],
               ["E-TİCARET", "Online Butik"],
@@ -107,11 +107,11 @@ export default function Page() {
           </p>
 
           <h2 className="mt-4 text-4xl font-black md:text-5xl">
-            Qustylse Toptan Kadın Giyim Ürünleri
+            Qustyle Toptan Kadın Giyim Ürünleri
           </h2>
 
           <p className="mt-7 text-lg leading-8 text-black/65">
-            Qustylse kadın giyim ürünleriyle ilgilenen butik ve e-ticaret
+            Qustyle kadın giyim ürünleriyle ilgilenen butik ve e-ticaret
             işletmeleri, aradıkları modeli görsel üzerinden iletebilir.
             Elbise, pantolon, takım, ceket, triko ve farklı kadın giyim
             kategorilerinde ürün araştırması yapılabilir.
@@ -124,10 +124,10 @@ export default function Page() {
           </p>
 
           <Link
-            href="/blog/qustylse-toptan"
+            href="/blog/qustyle-toptan"
             className="mt-7 inline-block font-black underline underline-offset-4"
           >
-            Qustylse Toptan →
+            Qustyle Toptan →
           </Link>
         </section>
 
@@ -143,7 +143,7 @@ export default function Page() {
             </h2>
 
             <p className="mt-7 max-w-3xl text-lg leading-8 text-white/60">
-              Qustylse ürünü veya benzer bir kadın giyim modeli arıyorsanız
+              Qustyle ürünü veya benzer bir kadın giyim modeli arıyorsanız
               ekran görüntüsünü WhatsApp'tan gönderin. Ürün seçeneklerini
               araştırarak size dönüş yapalım.
             </p>
@@ -161,13 +161,13 @@ export default function Page() {
 
         <section className="mx-auto max-w-4xl px-6 py-20">
           <h2 className="text-4xl font-black">
-            Qustylse Toptan Merter
+            Qustyle Toptan Merter
           </h2>
 
           <p className="mt-7 text-lg leading-8 text-black/65">
             Merter kadın giyim piyasasında ürün arayan işletmeler,
             ilgilendikleri model üzerinden tedarik araştırması yapabilir.
-            Qustylse toptan ürün aramanızda ürün görselini göndererek
+            Qustyle toptan ürün aramanızda ürün görselini göndererek
             araştırma talebi oluşturabilirsiniz.
           </p>
 
@@ -179,7 +179,7 @@ export default function Page() {
           </Link>
 
           <h2 className="mt-14 text-3xl font-black md:text-4xl">
-            E-Ticaret İçin Qustylse Kadın Giyim
+            E-Ticaret İçin Qustyle Kadın Giyim
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-black/65">
@@ -198,7 +198,7 @@ export default function Page() {
 
           <div className="mt-16 rounded-[2rem] border border-black/10 bg-white p-8 md:p-12">
             <p className="text-xs font-black tracking-[.2em] text-black/35">
-              QUSTYLSE TOPTAN
+              QUSTYLE TOPTAN
             </p>
 
             <h2 className="mt-4 text-3xl font-black">
@@ -207,10 +207,10 @@ export default function Page() {
 
             <div className="mt-8 grid gap-3 md:grid-cols-2">
               <Link
-                href="/blog/qustylse-toptan"
+                href="/blog/qustyle-toptan"
                 className="rounded-2xl bg-[#f5f2eb] p-5 font-black"
               >
-                Qustylse Toptan →
+                Qustyle Toptan →
               </Link>
 
               <Link
@@ -242,7 +242,7 @@ export default function Page() {
             </p>
 
             <h2 className="mt-4 text-3xl font-black md:text-5xl">
-              Qustylse ürünü arıyorsanız görselini gönderin.
+              Qustyle ürünü arıyorsanız görselini gönderin.
             </h2>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-black/60">
@@ -270,7 +270,7 @@ export default function Page() {
           rel="noopener noreferrer"
           className="block rounded-full bg-white px-5 py-4 text-center text-sm font-black text-black"
         >
-          QUSTYLSE TOPTAN ÜRÜN SOR →
+          QUSTYLE TOPTAN ÜRÜN SOR →
         </a>
       </div>
     </main>
